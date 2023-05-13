@@ -46,8 +46,8 @@ function generateUniqueId() {
 
 function chatStripe(isAi, value, uniqueId) {
 	return `
-        <div class="wrapper ${isAi && "ai"}">
-            <div class="chat">
+        <div class="wrapper ">
+            <div class="chat ${isAi && "ai"}">
                 <div class="profile">
                     <img 
                       src=${isAi ? bot : user} 
